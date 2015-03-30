@@ -1,0 +1,98 @@
+1x-vl909-128-119-20-255:src xianchen$ java myFileSystem
+C: Creating new file:file1.c 3
+ Allocated Blocks: 1 2 3 
+C: Creating new file:file2.c 8
+ Allocated Blocks: 4 5 6 7 8 9 10 11 
+C: Creating new file:file3.c 4
+ Allocated Blocks: 12 13 14 15 
+C: Creating new file:a.out 5
+ Allocated Blocks: 16 17 18 19 20 
+C: Creating new file:lab1.jav 6
+ Allocated Blocks: 21 22 23 24 25 26 
+L: Listing Files
+ File Name: file1.c; File Size: 3
+ File Name: file2.c; File Size: 8
+ File Name: file3.c; File Size: 4
+ File Name: a.out; File Size: 5
+ File Name: lab1.jav; File Size: 6
+W: Writing Block0 of file1.c
+ --Disk Address of Block: 1
+ WROTE: hello
+W: Writing Block1 of file1.c
+ --Disk Address of Block: 2
+ WROTE: hello
+W: Writing Block2 of file1.c
+ --Disk Address of Block: 3
+ WROTE: hello
+W: Writing Block3 of file2.c
+ --Disk Address of Block: 7
+ WROTE: hello
+W: Writing Block7 of file2.c
+ --Disk Address of Block: 11
+ WROTE: hello
+W: Writing Block2 of file2.c
+ --Disk Address of Block: 6
+ WROTE: hello
+W: Writing Block4 of file2.c
+ --Disk Address of Block: 8
+ WROTE: hello
+W: Writing Block5 of file2.c
+ --Disk Address of Block: 9
+ WROTE: hello
+W: Writing Block0 of a.out
+ --Disk Address of Block: 16
+ WROTE: hello
+W: Writing Block1 of a.out
+ --Disk Address of Block: 17
+ WROTE: hello
+W: Writing Block2 of a.out
+ --Disk Address of Block: 18
+ WROTE: hello
+W: Writing Block3 of a.out
+ --Disk Address of Block: 19
+ WROTE: hello
+W: Writing Block4 of a.out
+ --Disk Address of Block: 20
+ WROTE: hello
+D: Deleting file file3.c
+ Deallocated Blocks: 12 13 14 15 
+R: Reading Block 2 of file1.c
+ --Disk Address of Block: 3
+ READ: hello
+C: Creating new file:file4.c 7
+ Allocated Blocks: 12 13 14 15 27 28 29 
+L: Listing Files
+ File Name: file1.c; File Size: 3
+ File Name: file2.c; File Size: 8
+ File Name: file4.c; File Size: 7
+ File Name: a.out; File Size: 5
+ File Name: lab1.jav; File Size: 6
+R: Reading Block 4 of file2.c
+ --Disk Address of Block: 8
+ READ: hello
+R: Reading Block 5 of file2.c
+ --Disk Address of Block: 9
+ READ: hello
+R: Reading Block 6 of file2.c
+ --Disk Address of Block: 10
+ READ: 
+D: Deleting file lab1.jav
+ Deallocated Blocks: 21 22 23 24 25 26 
+C: Creating new file:lab2.jav 7
+ Allocated Blocks: 21 22 23 24 25 26 30 
+R: Reading Block 1 of a.out
+ --Disk Address of Block: 17
+ READ: hello
+R: Reading Block 3 of a.out
+ --Disk Address of Block: 19
+ READ: hello
+R: Reading Block 0 of a.out
+ --Disk Address of Block: 16
+ READ: hello
+L: Listing Files
+ File Name: file1.c; File Size: 3
+ File Name: file2.c; File Size: 8
+ File Name: file4.c; File Size: 7
+ File Name: a.out; File Size: 5
+ File Name: lab2.jav; File Size: 7
+1x-vl909-128-119-20-255:src xianchen$ 
